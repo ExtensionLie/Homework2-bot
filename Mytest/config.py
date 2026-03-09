@@ -4,7 +4,7 @@ BOT_TOKEN = os.getenv("BOT_TOKEN", "YOUR_BOT_TOKEN_HERE")
 
 # Telegram ID адміна — він може видаляти будь-яке ДЗ
 # Щоб дізнатися свій ID — напиши боту @userinfobot
-ADMIN_ID = 6852111925  # замін на свій ID, наприклад: 123456789
+ADMIN_ID = int(os.getenv("ADMIN_ID", "0"))  # замін на свій ID, наприклад: 123456789
 
 SUBJECTS = [
     "📐 Математика",
