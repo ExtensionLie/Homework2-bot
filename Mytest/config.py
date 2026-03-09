@@ -1,5 +1,6 @@
 # config.py
-BOT_TOKEN = "8622027121:AAHqCjDHSsv6nx_2f1ZNClD19cyIcm8YJHQ"
+import os
+BOT_TOKEN = os.getenv("BOT_TOKEN", "YOUR_BOT_TOKEN_HERE")
 
 # Telegram ID адміна — він може видаляти будь-яке ДЗ
 # Щоб дізнатися свій ID — напиши боту @userinfobot
