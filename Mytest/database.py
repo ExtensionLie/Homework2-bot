@@ -2,7 +2,8 @@
 import aiosqlite
 from datetime import date, timedelta
 
-DB_PATH = "homework.db"
+import os
+DB_PATH = os.getenv("DB_PATH", "homework.db")
 
 async def init_db():
     async with aiosqlite.connect(DB_PATH) as db:
